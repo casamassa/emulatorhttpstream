@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "d8f22099-271a-4d83-af11-7e5c137ab9c1",
+		"name": "EmuladorHTTPStream",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12529940"
+	},
+	"item": [
+		{
+			"name": "Emulador SendData TagInventory",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "impinj",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "root",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"timestamp\": \"2025-02-06T17:07:35.126026479Z\",\"hostname\": \"impinj-15-2b-62\",\"eventType\": \"tagInventory\",\"tagInventoryEvent\": {\"epc\": \"4oARkaUDAGFHu5fV\",\"epcHex\": \"E2801191A503006147BB97D5\",\"antennaPort\": 1,\"antennaName\": \"Cabinet\",\"peakRssiCdbm\": -6200,\"transmitPowerCdbm\": 1500,\"lastSeenTime\": \"2025-02-06T17:07:35.123930Z\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5099/sendData/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5099",
+					"path": [
+						"sendData",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Emulador SendData GPI Transition",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "impinj",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "root",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"timestamp\": \"2024-11-19T00:13:45.735744895Z\",\r\n    \"eventType\": \"gpiTransition\",\r\n    \"gpiTransitionEvent\": {\r\n      \"gpi\": 1, // 1 or 2\r\n      \"transition\": \"high-to-low\" // low-to-high or high-to-low\r\n    }\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5099/sendData/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5099",
+					"path": [
+						"sendData",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
