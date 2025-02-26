@@ -28,7 +28,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"timestamp\": \"2025-02-06T17:07:35.126026479Z\",\"hostname\": \"impinj-15-2b-62\",\"eventType\": \"tagInventory\",\"tagInventoryEvent\": {\"epc\": \"4oARkaUDAGFHu5fV\",\"epcHex\": \"E2801191A503006147BB97D5\",\"antennaPort\": 1,\"antennaName\": \"Cabinet\",\"peakRssiCdbm\": -6200,\"transmitPowerCdbm\": 1500,\"lastSeenTime\": \"2025-02-06T17:07:35.123930Z\"}}",
+					"raw": "{\r\n    \"timestamp\": \"2025-02-06T17:07:35.126026479Z\",\r\n    \"hostname\": \"impinj-15-2b-62\",\r\n    \"eventType\": \"tagInventory\",\r\n    \"tagInventoryEvent\": {\r\n        \"epc\": \"4oARkaUDAGFHu5fV\",\r\n        \"epcHex\": \"C000000000712281\",\r\n        \"antennaPort\": 1,\r\n        \"antennaName\": \"Cabinet\",\r\n        \"peakRssiCdbm\": -6200,\r\n        \"transmitPowerCdbm\": 1500,\r\n        \"lastSeenTime\": \"2025-02-06T17:07:35.123930Z\"\r\n    }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
