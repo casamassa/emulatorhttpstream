@@ -1,0 +1,6 @@
+@EmulatorWebApp_HostAddress = http://localhost:5052
+
+GET {{EmulatorWebApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
